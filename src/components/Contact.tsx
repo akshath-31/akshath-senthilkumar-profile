@@ -113,9 +113,8 @@ const Contact = () => {
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
                         <p className="font-medium group-hover:text-primary transition-colors duration-300">
-                          {info.value}
+                          {info.label}
                         </p>
                       </div>
                     </a>
@@ -124,15 +123,25 @@ const Contact = () => {
               </div>
 
               {/* Availability Status */}
-              <div className="card-glow rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="font-medium text-green-500">Available for Projects</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="card-glow rounded-xl p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                    <span className="font-medium text-green-500">Available for Projects</span>
+                  </div>
+                  <p className="text-muted-foreground text-sm">
+                    Currently seeking internship opportunities and open to exciting collaborative projects.
+                  </p>
                 </div>
-                <p className="text-muted-foreground text-sm">
-                  Currently seeking internship opportunities and open to exciting collaborative projects. 
-                  Quick to respond and eager to contribute to meaningful work.
-                </p>
+                <div className="card-glow rounded-xl p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" />
+                    <span className="font-medium text-blue-500">Open to Work</span>
+                  </div>
+                  <p className="text-muted-foreground text-sm">
+                    Quick to respond and eager to contribute to meaningful work.
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -121,18 +121,6 @@ const Skills = () => {
             </div>
           </div>
 
-          {/* Philosophy */}
-          <div className="mt-16">
-            <div className="card-glow rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-semibold mb-4">My Philosophy</h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                "I believe that curiosity is the foundation of innovation. Every challenge is an opportunity 
-                to learn something new, and every project is a chance to create meaningful impact. 
-                The discipline I've learned from cricket applies to everything I do – persistence, 
-                teamwork, and the drive to constantly improve."
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
