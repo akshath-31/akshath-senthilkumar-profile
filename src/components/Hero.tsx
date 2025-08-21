@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Download, MessageCircle } from "lucide-react";
+import { Github, Linkedin, FileText, MessageCircle } from "lucide-react";
 
 
 const Hero = () => {
@@ -95,11 +95,12 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="#"
-                  download
-                  aria-label="Download Resume"
+                  href="https://drive.google.com/drive/folders/1_eDmQ8nYjFdSM8mq8UlStQT04LmuhuMo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Resume"
                 >
-                  <Download className="h-5 w-5" />
+                  <FileText className="h-5 w-5" />
                 </a>
               </Button>
             </div>
