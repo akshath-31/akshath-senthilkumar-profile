@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Download, MessageCircle } from "lucide-react";
-import profileImage from "@/assets/linkedin-profile.jpg";
+
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -115,7 +115,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
                   <img
-                    src={profileImage}
+                    src="https://i.postimg.cc/qvW4FM7Z/Linkedin-dp.jpg"
                     alt="Akshath Senthilkumar"
                     className="w-full h-full object-cover"
                   />
