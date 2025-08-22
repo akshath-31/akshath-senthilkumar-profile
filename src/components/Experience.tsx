@@ -78,7 +78,7 @@ const Experience = () => {
                         {exp.description.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start gap-3">
                             <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-muted-foreground text-2xl">{item}</span>
+                            <span className="text-muted-foreground text-sm">{item}</span>
                           </li>
                         ))}
                       </ul>
