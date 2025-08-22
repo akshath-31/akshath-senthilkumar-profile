@@ -41,7 +41,7 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
