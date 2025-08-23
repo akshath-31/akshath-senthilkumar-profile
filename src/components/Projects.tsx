@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     {
       title: "AI-Based System",
-      description: "Innovative AI solution built during hackathon with a 5-member team in 48 hours. Demonstrated rapid prototyping and collaborative development skills.",
+      description: "Innovative Fin-Tech AI solution built during hackathon with a 5-member team in 24 hours. Demonstrated rapid prototyping and collaborative development skills.",
       technologies: ["Python", "Machine Learning", "AI", "Team Collaboration"],
       status: "completed",
       duration: "48 hours",
@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "Data Science Projects",
       description: "Comprehensive data analysis and visualization projects completed during internship at ArcticTern Consultancy Services.",
-      technologies: ["Python", "Data Analysis", "Visualization", "Statistical Modeling"],
+      technologies: ["Python", "Data Analysis", "Visualization", "Statistical Modeling", "Digital Marketing"],
       status: "completed",
       duration: "3 months",
       team: "Professional Team",
@@ -159,7 +159,11 @@ const Projects = () => {
 
                 {/* Project Actions */}
                 <div className="flex gap-4">
-                  {project.status === "completed" && (
+                  {project.status === "completed" && (project.title === "AI-Based System" || project.title === "Data Science Projects") ? (
+                    <div className="text-center text-muted-foreground text-sm py-2">
+                      Project completed successfully
+                    </div>
+                  ) : project.status === "completed" ? (
                     <>
                       <Button variant="outline" size="sm" className="flex-1">
                         <Github className="h-4 w-4 mr-2" />
@@ -170,14 +174,12 @@ const Projects = () => {
                         Live Demo
                       </Button>
                     </>
-                  )}
-                  {project.status === "ongoing" && (
+                  ) : project.status === "ongoing" ? (
                     <Button variant="outline" size="sm" className="flex-1">
                       <Clock className="h-4 w-4 mr-2" />
                       In Development
                     </Button>
-                  )}
-                  {project.status === "coming-soon" && (
+                  ) : (
                     <Button variant="outline" size="sm" className="flex-1" disabled>
                       <Clock className="h-4 w-4 mr-2" />
                       Coming Soon

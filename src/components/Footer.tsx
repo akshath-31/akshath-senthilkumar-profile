@@ -120,9 +120,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border/50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>© {currentYear} Akshath Senthilkumar. Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>using React & TypeScript</span>
+              <span>© {currentYear} Akshath Senthilkumar. All rights reserved.</span>
             </div>
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground">

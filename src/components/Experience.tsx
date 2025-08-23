@@ -21,7 +21,7 @@ const Experience = () => {
       company: "Hackathon Project",
       period: "March 2025",
       description: [
-        "Built an innovative AI-based system with a 5-member team in 48 hours",
+        "Built an innovative Fin-Tech AI-based system with a 5-member team in 24 hours",
         "Strengthened teamwork and rapid prototyping skills under pressure",
         "Enhanced presentation and communication abilities",
         "Demonstrated ability to deliver functional solutions in tight deadlines"
