@@ -110,7 +110,7 @@ const Skills = () => {
 
             {/* Projects */}
             <div className="card-glow rounded-2xl p-6 text-center">
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
+              <div className="text-3xl font-bold text-primary mb-2">5+</div>
               <p className="text-muted-foreground">Projects Completed</p>
             </div>
 

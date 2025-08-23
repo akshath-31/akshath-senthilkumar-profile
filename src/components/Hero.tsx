@@ -29,10 +29,10 @@ const Hero = () => {
                 <span className="text-foreground">Senthilkumar</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground font-light">
-                Engineering Student | Builder | Explorer of Ideas
+                Engineering Student | Developer | Explorer
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                I love creating meaningful solutions that make a difference. From data science to AI development, I'm passionate about turning innovative ideas into reality.
+                I enjoy building solutions that solve real problems and create impact. From data science to web development, I'm constantly exploring ways to turn ideas into reality.
               </p>
             </div>
 
