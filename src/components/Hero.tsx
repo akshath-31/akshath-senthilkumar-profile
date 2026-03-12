@@ -94,7 +94,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/drive/folders/1_eDmQ8nYjFdSM8mq8UlStQT04LmuhuMo"
+                  href="https://drive.google.com/file/d/108GOPEmdkp4mM0fX3jYRww7hG3pOISSa/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Resume"
