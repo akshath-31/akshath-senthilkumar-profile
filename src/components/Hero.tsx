@@ -43,22 +43,24 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="glow-effect bg-primary hover:bg-primary/90"
-                asChild
+                onClick={() => {
+                  const el = document.getElementById("projects");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
               >
-                <a href="#projects">
-                  <span>View Portfolio</span>
-                </a>
+                <span>View Portfolio</span>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="border-border hover:border-primary/50 hover:bg-primary/10"
-                asChild
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
               >
-                <a href="#contact">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Contact Me
-                </a>
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Contact Me
               </Button>
             </div>
 
