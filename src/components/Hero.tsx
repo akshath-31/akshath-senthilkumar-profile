@@ -43,9 +43,11 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="glow-effect bg-primary hover:bg-primary/90"
-                onClick={() => scrollToSection("#projects")}
+                asChild
               >
-                <span>View Portfolio</span>
+                <a href="#projects">
+                  <span>View Portfolio</span>
+                </a>
               </Button>
               <Button
                 variant="outline"
