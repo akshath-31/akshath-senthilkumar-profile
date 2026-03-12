@@ -51,10 +51,12 @@ const Hero = () => {
                 variant="outline"
                 size="lg"
                 className="border-border hover:border-primary/50 hover:bg-primary/10"
-                onClick={() => scrollToSection("#contact")}
+                asChild
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Contact Me
+                <a href="#contact">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Contact Me
+                </a>
               </Button>
             </div>
 
