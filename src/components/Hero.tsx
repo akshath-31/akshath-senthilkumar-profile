@@ -6,7 +6,9 @@ const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
@@ -41,7 +43,10 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="glow-effect bg-primary hover:bg-primary/90"
-                onClick={() => scrollToSection("#projects")}
+                onClick={() => {
+                  const el = document.getElementById("projects");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
               >
                 <span>View Portfolio</span>
               </Button>
@@ -49,7 +54,10 @@ const Hero = () => {
                 variant="outline"
                 size="lg"
                 className="border-border hover:border-primary/50 hover:bg-primary/10"
-                onClick={() => scrollToSection("#contact")}
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Contact Me
@@ -94,7 +102,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/drive/folders/1_eDmQ8nYjFdSM8mq8UlStQT04LmuhuMo"
+                  href="https://drive.google.com/file/d/108GOPEmdkp4mM0fX3jYRww7hG3pOISSa/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Resume"
