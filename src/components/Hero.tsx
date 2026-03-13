@@ -37,10 +37,10 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start relative z-10">
               <Button
                 size="lg"
-                className="glow-effect bg-primary hover:bg-primary/90"
+                className="glow-effect bg-primary hover:bg-primary/90 cursor-pointer"
                 onClick={() => scrollToSection("#projects")}
               >
                 <span>View Portfolio</span>
@@ -48,11 +48,14 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-border hover:border-primary/50 hover:bg-primary/10"
-                onClick={() => scrollToSection("#contact")}
+                className="border-border hover:border-primary/50 hover:bg-primary/10 cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Contact Me
+                <MessageCircle className="mr-2 h-5 w-5 pointer-events-none" />
+                <span>Contact Me</span>
               </Button>
             </div>
 
@@ -94,7 +97,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/drive/folders/1_eDmQ8nYjFdSM8mq8UlStQT04LmuhuMo"
+                  href="https://drive.google.com/file/d/108GOPEmdkp4mM0fX3jYRww7hG3pOISSa/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Resume"
@@ -116,9 +119,11 @@ const Hero = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
                   <img
-                    src="https://i.postimg.cc/qvW4FM7Z/Linkedin-dp.jpg"
+                    src="/profile.jpg"
                     alt="Akshath Senthilkumar"
                     className="w-full h-full object-cover"
+                    fetchPriority="high"
+                    loading="eager"
                   />
                 </div>
                 
