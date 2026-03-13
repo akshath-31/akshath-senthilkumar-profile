@@ -6,7 +6,9 @@ const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
@@ -51,7 +53,7 @@ const Hero = () => {
                 className="border-border hover:border-primary/50 hover:bg-primary/10 cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                  scrollToSection("#contact");
                 }}
               >
                 <MessageCircle className="mr-2 h-5 w-5 pointer-events-none" />
